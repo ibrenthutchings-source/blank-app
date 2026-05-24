@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lex-Risk Protocol</title>
+
+  <!-- Type -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <template id="__bundler_thumbnail" data-bg-color="#0c0a14">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#0c0a14"/>
+      <g transform="translate(600,400)">
+        <circle r="200" fill="none" stroke="#b8a4ff" stroke-width="1" opacity="0.3"/>
+        <circle r="140" fill="none" stroke="#b8a4ff" stroke-width="1" opacity="0.5"/>
+        <circle r="80"  fill="none" stroke="#b8a4ff" stroke-width="1.5"/>
+        <rect x="-32" y="-32" width="64" height="64" fill="none" stroke="#b8a4ff" stroke-width="1.5"/>
+        <text text-anchor="middle" dy="14" font-family="Times New Roman, serif" font-style="italic" font-size="56" fill="#b8a4ff">L</text>
+        <circle cx="140" cy="-90" r="6" fill="#ff7ad9"/>
+        <circle cx="-160" cy="60" r="4" fill="#b8a4ff"/>
+        <circle cx="120" cy="140" r="5" fill="#b8a4ff"/>
+        <circle cx="-100" cy="-150" r="3" fill="#6ee7b7"/>
+      </g>
+      <text x="600" y="640" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="34" fill="#ece9f5">Lex-Risk Protocol</text>
+      <text x="600" y="676" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#8a85a3" letter-spacing="3">UNPACKING ANCHORS · ONE MOMENT</text>
+    </svg>
+  </template>
+
+  <div id="root"></div>
+
+  <!-- Tweaks shell + helpers -->
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <!-- Data -->
+  <script type="text/babel" src="data.jsx"></script>
+
+  <!-- Interactions: toasts, modals, contexts -->
+  <script type="text/babel" src="interactions.jsx"></script>
+
+  <!-- Shell -->
+  <script type="text/babel" src="shell.jsx"></script>
+
+  <!-- Modules -->
+  <script type="text/babel" src="module-library.jsx"></script>
+  <script type="text/babel" src="module-policy.jsx"></script>
+  <script type="text/babel" src="module-ingest.jsx"></script>
+  <script type="text/babel" src="module-brain.jsx"></script>
+  <script type="text/babel" src="module-ledger.jsx"></script>
+  <script type="text/babel" src="module-pipelines.jsx"></script>
+  <script type="text/babel" src="module-settings.jsx"></script>
+
+  <!-- App -->
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
